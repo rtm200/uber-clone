@@ -1,0 +1,301 @@
+@import url('https://fonts.cdnfonts.com/css/uber-move-text');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Uber Move Text";
+}
+/* components */
+.input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 7px;
+    color: hsl(0, 0%, 25%);
+    padding: 0 20px;
+}
+.input input{
+    height: 100%;
+    width: 100%;
+    margin-left: 15px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-weight: 300;
+    font-size: 16px;
+}
+.input i{
+    color: black;
+}
+.line{
+    position: absolute;
+    height: 43px;
+    width: 0.5px;
+    background-color: black;
+    top: 100%;
+    left: 45%;
+    z-index: 1;
+}
+
+button{
+    padding: 14px 25px;
+    background-color: black;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+    border: none;
+}
+button:hover{
+    background-color: hsl(0, 0%, 25%);
+}
+
+header{
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 84px;
+    /* margin-left: auto;
+    margin-right: auto;
+    max-width: calc(1280px + 64px* 2); */
+    background-color: black;
+    color: white;
+}
+.header_part{
+    display: flex;
+    align-items: center;
+}
+.header_part h5{
+    font-size: 25px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+.header_part_nav{
+    display: flex;
+    gap: 4px;
+    list-style: none;
+}
+.header_part_nav li{
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.header_part_nav li:hover{
+    background-color: hsl(0, 0%, 15%);
+}
+.login{
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: 0.3s; 
+}
+.login:hover{
+    background-color: hsl(0, 0%, 15%);
+}
+
+
+/* main */
+main{
+    width: 80%;
+    padding: 4rem 0;
+    margin: 0 auto;
+}
+.calculator{
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+}
+.calculator h1{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+}
+.inputTopic{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.inputTopic:hover i{
+    background-color: hsl(0, 0%, 90%);
+    color: black !important;
+}
+.inputTopic:hover span{
+    color: black !important;
+}
+.map{
+    width: 576px;
+    height: 576px;
+    border-radius: 12px;
+    background-color: hsl(0, 0%, 85%);
+}
+
+.suggestion{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.suggestion a{
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+.suggestion a:hover{
+    background-color: hsl(0, 0%, 85%);
+}
+
+.cards1{
+    flex-wrap: wrap;
+}
+.cards2{
+    flex-wrap: wrap-reverse;
+}
+.cards3{
+    flex-wrap: wrap;
+}
+.cards4{
+    flex-wrap: wrap-reverse;
+}
+.cards {
+    margin-top: 128px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.cards img {
+    max-width: 100%;
+    height: auto; 
+    flex: 1; 
+}
+
+.cards .cards_content {
+    flex: 1;
+}
+
+.cards h2 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.cards p {
+    color: hsl(0, 0%, 45%);
+    letter-spacing: 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 20px 0;
+}
+
+.qrcodes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.qrcode{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
+    background-color: white;
+    padding: 24px;
+    border-radius: 4px;
+}
+.qrcode i {
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+.qrcode:hover i{
+    transform: translateX(10px);
+}
+footer{
+    background-color: black;
+    padding: 64px 0;
+}
+.footer_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer_container ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: white;
+}
+.footer_container ul h5{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 1000px) {
+    header{
+        padding: 12px 64px;
+    }
+    .header_part_nav{
+        display: none;
+    }
+    .calculator{
+        display: flex;
+        flex-direction: column;
+    }
+    .input{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 48px;
+        background-color: hsl(0, 0%, 95%);
+        border: none;
+        border-radius: 7px;
+        color: hsl(0, 0%, 25%);
+        padding: 0 20px;
+    }
+    .map{
+        width: 100%;
+        height: 400px;
+    }
+    .cards h2 {
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .cards p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .footer_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5rem;
+        column-gap: 2rem;
+    }
+  }

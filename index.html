@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header_part">
+            <h5>Uber</h5>
+            <ul class="header_part_nav">
+                <li>Ride</li>
+                <li>Drive</li>
+                <li>Business</li>
+                <li>Uber Eats</li>
+                <li>About</li>
+            </ul>
+        </div>
+        <div class="header_part">
+            <ul class="header_part_nav">
+                <li style="display: flex; align-items: end; gap: 6px;"><i class='bx bx-globe'></i>EN</li>
+                <li>Help</li>
+            </ul>
+            <span class="login">Log in</span>
+            <span class="login" style="background-color: white; color: black; margin-left: 4px;">Sign up</span>
+        </div>
+    </header>
+    <main>
+        <!-- first part -->
+        <div class="calculator">
+            <div>
+                <h1>Go anywhere with Uber</h1>
+                <div style="display: flex; gap: 2rem; align-items: center; margin: 1.5rem 0;">
+                    <div class="inputTopic">
+                        <i class='bx bxs-car' style="background-color: hsl(0, 0%, 90%); font-size: 24px; padding: 7px; border-radius: 8px; transition: 0.3s;"></i>
+                        <span style="font-size: 16px; font-weight: 500; transition: 0.3s;">Ride</span>
+                    </div>
+                    <div class="inputTopic">
+                        <i class='bx bxs-key' style="color: grey; font-size: 24px; padding: 7px; border-radius: 8px; transition: 0.3s;"></i>
+                        <span style="font-size: 16px; font-weight: 500; color: grey; transition: 0.3s;">Rent</span>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 25px; max-width: 450px">
+                    <div class="input">
+                        <i class='bx bxs-square' style="position: relative; font-size: 12px;"><span class="line"></span></i>
+                        <input type="text" placeholder="Pickup location">
+                        <i class='bx bxs-chevron-up' style="transform: rotate(45deg); font-size: 20px;"></i>
+                    </div>
+                    <div class="input">
+                        <i class='bx bxs-circle'  style="font-size: 12px;"></i>
+                        <input type="text" placeholder="Dropoff location">
+                    </div>
+                    <span style="display:  flex; gap: 1rem;">
+                        <div class="input">
+                            <i class='bx bxs-calendar' ></i>
+                            <input type="text" placeholder="Today">
+                        </div>
+                        <div class="input">
+                            <i class='bx bxs-time' ></i>
+                            <input type="text" placeholder="Now">
+                        </div>
+                    </span>
+                    <div>
+                        <button>See prices</button>
+                    </div>
+                </div>
+            </div>
+            <div class="map"></div>
+        </div>
+
+        <!-- second part -->
+        <div style="margin-top: 128px;">
+            <h2 style="font-size: 36px; font-weight: 700; margin-bottom: 40px;">Suggestions</h2>
+            <div class="suggestion">
+                <div style="display: flex; align-items: center; justify-content: space-between; padding: 16px; border-radius: 9px; background-color: hsl(0, 0%, 96%); flex: 1;">
+                    <div>
+                        <span style="font-weight: 500; font-size: 16px;">Ride</span>
+                        <p style="font-weight: normal; font-size: 12px; color: hsl(0, 0%, 20%); margin: 10px 0 20px 0; line-height: 20px;">Go anywhere with Uber. Request a ride, hop in, and go.</p>
+                        <a href="#">Details</a>
+                    </div>
+                    <img src="img/ride.png" alt="ride" style="height: 128px; object-fit: contain; width: 128px;">
+                </div>
+                <div style="display: flex; align-items: center; justify-content: space-between; padding: 16px; border-radius: 9px; background-color: hsl(0, 0%, 96%); flex: 1;">
+                    <div>
+                        <span style="font-weight: 500; font-size: 16px;">Ride</span>
+                        <p style="font-weight: normal; font-size: 12px; color: hsl(0, 0%, 20%); margin: 10px 0 20px 0; line-height: 20px;">Go anywhere with Uber. Request a ride, hop in, and go.</p>
+                        <a href="#">Details</a>
+                    </div>
+                    <img src="img/car-rentals.png" alt="ride" style="height: 128px; object-fit: contain; width: 128px;">
+                </div>
+                <div style="display: flex; align-items: center; justify-content: space-between; padding: 16px; border-radius: 9px; background-color: hsl(0, 0%, 96%); flex: 1;">
+                    <div>
+                        <span style="font-weight: 500; font-size: 16px;">Ride</span>
+                        <p style="font-weight: normal; font-size: 12px; color: hsl(0, 0%, 20%); margin: 10px 0 20px 0; line-height: 20px;">Go anywhere with Uber. Request a ride, hop in, and go.</p>
+                        <a href="#">Details</a>
+                    </div>
+                    <img src="img/reserve_clock.png" alt="ride" style="height: 128px; object-fit: contain; width: 128px;">
+                </div>
+            </div>
+        </div>
+
+        <!-- third part -->
+         <div class="cards cards1">
+            <img src="img/1.jpg" alt="">
+            <div class="cards_content">
+                <h2>Drive when you want, make what you need</h2>
+                <p>Make money on your schedule with deliveries or rides—or both. You can use your own car or choose a rental through Uber.</p>
+                <button>Get started</button>
+            </div>
+         </div>
+         <div class="cards cards2">
+            <div class="cards_content">
+                <h2>The Uber you know, reimagined for business</h2>
+                <p>Uber for Business is a platform for managing global rides and meals, and local deliveries, for companies of any size.</p>
+                <button>Get started</button>
+            </div>
+            <img src="img/2.jpg" alt="">
+         </div>
+         <div class="cards cards3">
+            <img src="img/3.jpg" alt="">
+            <div class="cards_content">
+                <h2>We’re on our way so you can be on yours</h2>
+                <p>On our way: 3 little words that shape everything we do. And we’re not just talking about a simple ride or meal. Check out our new brand campaign, a celebration of how showing up for others can lead to amazing things.</p>
+                <button>Learn more</button>
+            </div>
+         </div>
+         <div class="cards cards4">
+            <div class="cards_content">
+                <h2>Save on Uber and Uber Eats with Uber One membership</h2>
+                <p>Become an Uber One member for savings and exclusive perks on Uber and Uber Eats.</p>
+                <p>Sign up for just $9.99/month.</p>
+                <button>Sign up to save</button>
+            </div>
+            <img src="img/4.jpg" alt="">
+         </div>
+    </main>
+    <!-- fourth part -->
+    <div style="background-color: hsl(0, 0%, 95%); padding: 64px 0; margin-top: 64px;">
+        <div style="width: 80%; margin: 0 auto;">
+            <h2 style="font-size: 36px;font-weight: 700; margin-bottom: 44px;">It’s easier in the apps</h2>
+            <div class="qrcodes">
+                <a href="#" class="qrcode">
+                    <img src="img/qr.jpg" alt="qr" width="150px">
+                    <div>
+                        <h2 style="font-size: 24px; font-weight: 700;">Download the Uber app</h2>
+                        <span style="font-size: 16px; color: hsl(0, 0%, 20%);">Scan to download</span>
+                    </div>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+                <a href="#" class="qrcode">
+                    <img src="img/qr.jpg" alt="qr" width="150px">
+                    <div>
+                        <h2 style="font-size: 24px; font-weight: 700;">Download the Driver app</h2>
+                        <span style="font-size: 16px; color: hsl(0, 0%, 20%);">Scan to download</span>
+                    </div>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div style="width: 80%; margin: 0 auto;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 40px;">
+                <h3 style="font-size: 1.75rem; color: white;">Uber</h3>
+                <span style="font-size: 0.875rem; color: rgb(149, 149, 149);">Do not sell or share my personal information</span>
+            </div>
+            <div class="footer_container">
+                <ul>
+                    <h5>Company</h5>
+                    <li>Avout us</li>
+                    <li>Our offerings</li>
+                    <li>Newsroom</li>
+                    <li>Investors</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>Uber Ai</li>
+                </ul>
+                <ul>
+                    <h5>Products</h5>
+                    <li>Ride</li>
+                    <li>Drive</li>
+                    <li>Deliver</li>
+                    <li>Eat</li>
+                    <li>Uber for Business</li>
+                    <li>Uber Freight</li>
+                    <li>Gifts cards</li>
+                </ul>
+                <ul>
+                    <h5>Global citizenship</h5>
+                    <li>Safety</li>
+                    <li>Diversity and Inclusion</li>
+                    <li>Sustainability</li>
+                </ul>
+                <ul>
+                    <h5>Travel</h5>
+                    <li>Reserve</li>
+                    <li>Cities</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
