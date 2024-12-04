@@ -233,6 +233,9 @@ main{
     font-size: 1.5rem;
     transition: 0.3s;
 }
+.qrcode img{
+    width: 150px;
+}
 .qrcode:hover i{
     transform: translateX(10px);
 }
@@ -291,6 +294,9 @@ footer{
     .cards p {
         font-size: 14px;
         line-height: 20px;
+    }
+    .qrcode img{
+        width: 100px;
     }
     .footer_container{
         display: grid;
